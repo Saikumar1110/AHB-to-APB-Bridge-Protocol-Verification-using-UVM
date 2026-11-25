@@ -1,1 +1,3 @@
+### Makefile – UVM Simulation and Regression
 
+This Makefile automates the compilation, simulation, waveform generation, and functional coverage reporting of the AHB-to-APB Bridge UVM verification environment. It supports both Mentor QuestaSim and Synopsys VCS simulators, with configurable targets for compiling SystemVerilog RTL and testbench files, running individual UVM tests such as `single_test`, `burst_test`, incrementing burst tests, and wrapping burst tests, and executing the complete regression suite. It also provides commands to view simulation waveforms, merge coverage results, generate HTML coverage reports, and clean up intermediate simulation files, simplifying the overall verification workflow.
