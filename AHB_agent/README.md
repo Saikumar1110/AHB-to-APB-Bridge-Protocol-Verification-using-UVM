@@ -1,1 +1,3 @@
+### APB Agent – UVM Verification
 
+This module implements an APB UVM Agent for monitoring and responding to APB transactions in the AHB-to-APB Bridge verification environment. It consists of an APB transaction class (`apb_xtn`) containing APB signals such as address, read data, write data, select, enable, and write control, along with a sequencer, driver, and monitor. The driver observes APB select and enable phases and provides read data for read transactions, while the monitor captures APB address, control, and data information and publishes the collected transactions through a UVM analysis port. The agent configuration supports active and passive modes, and the agent top module creates and configures multiple APB agents using the environment configuration.
